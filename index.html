@@ -4136,7 +4136,7 @@
             }
         }
     </style>
-    <script>
+    <!-- <script>
         add_filter('woocommerce_return_to_shop_redirect', 'custom_empty_cart_redirect');
 
         function custom_empty_cart_redirect($url) {
@@ -4145,7 +4145,7 @@
             }
             return $url;
         }
-    </script>
+    </script> -->
     <script>
         jQuery(function ($) {
             // Xử lý sự kiện khi nhấn nút "-"
@@ -4186,7 +4186,7 @@
             }
         });
     </script>
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             try {
                 // Lấy thẻ table
@@ -4209,7 +4209,7 @@
                 console.error("Đã xảy ra lỗi khi xử lý table:", error);
             }
         });
-    </script>
+    </script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Tìm tất cả các image widget với class 'copy-link-image'
@@ -4241,43 +4241,50 @@
     <script>
         document.addEventListener("scroll", function () {
             var element = document.querySelector(".sticky-element-price");
-            var element_bottom = document.querySelector(
-                ".sticky-element-price-bottom"
-            );
-            var rect = element.getBoundingClientRect();
+            if (element) {
+                var element_bottom = document.querySelector(
+                    ".sticky-element-price-bottom"
+                );
+                var rect = element.getBoundingClientRect();
 
-            // Kiểm tra khi phần tử đã cuộn khỏi màn hình (tức là vượt qua phía trên màn hình)
-            if (rect.bottom <= 0) {
-                element_bottom.classList.add("sticky-element-active");
-            } else {
-                element_bottom.classList.remove("sticky-element-active");
+                // Kiểm tra khi phần tử đã cuộn khỏi màn hình (tức là vượt qua phía trên màn hình)
+                if (rect.bottom <= 0) {
+                    element_bottom.classList.add("sticky-element-active");
+                } else {
+                    element_bottom.classList.remove("sticky-element-active");
+                }
             }
+
         });
     </script>
     <script>
         document.addEventListener("scroll", function () {
             var element = document.querySelector(".sticky-element-price");
-            if ((window.scrollY = element.offsetBottom)) {
-                element.classList.add("sticky-active");
-            } else {
-                element.classList.remove("sticky-active");
+            if (element) {
+                if ((window.scrollY = element.offsetBottom)) {
+                    element.classList.add("sticky-active");
+                } else {
+                    element.classList.remove("sticky-active");
+                }
             }
         });
     </script>
     <script>
         document.addEventListener("scroll", function () {
             var element = document.querySelector(".sticky-element");
-            if ((window.scrollY = element.offsetTop)) {
-                element.classList.add("sticky-active");
-            } else {
-                element.classList.remove("sticky-active");
+            if (element) {
+                if ((window.scrollY = element.offsetTop)) {
+                    element.classList.add("sticky-active");
+                } else {
+                    element.classList.remove("sticky-active");
+                }
             }
         });
     </script>
-    <script>
+    <!-- <script>
         const dropdown = document.querySelector(".elementor-nav-menu__container");
         const body = document.body;
-
+        
         dropdownToggle.addEventListener("click", function (e) {
             e.preventDefault();
             dropdown.classList.toggle("active");
@@ -4289,7 +4296,7 @@
                 body.classList.remove("lock-mouse");
             }
         });
-    </script>
+    </script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Thay thế ký tự '<' (previous) bằng hình ảnh
@@ -4377,7 +4384,8 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var zoomContainer = document.getElementById("product-large-image");
-            var zoomImage = zoomContainer.querySelector("img");
+            if (zoomContainer)
+                var zoomImage = zoomContainer.querySelector("img");
 
             if (zoomContainer && zoomImage) {
                 zoomContainer.addEventListener("mousemove", function (e) {
