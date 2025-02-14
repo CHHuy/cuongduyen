@@ -51,6 +51,8 @@
         media="all" />
     <link rel="stylesheet" id="e-swiper-css" href="plugins/elementor/assets/css/conditionals/e-swiper.min.css"
         media="all" />
+    <link rel="stylesheet" id="elementor-pro-css" href="plugins/elementor-pro/assets/css/frontend.min.css"
+        media="all" />
     <link rel="stylesheet" id="widget-spacer-css" href="plugins/elementor/assets/css/widget-spacer.min.css"
         media="all" />
     <link rel="stylesheet" id="widget-heading-css" href="plugins/elementor/assets/css/widget-heading.min.css"
@@ -101,8 +103,6 @@
         document.documentElement.className =
             document.documentElement.className.replace("no-js", "js");
     </script>
-
-    <!-- Lazyload -->
     <style>
         .no-js img.lazyload {
             display: none;
@@ -123,8 +123,6 @@
             transition-delay: 0ms;
         }
     </style>
-
-    <!-- End Lazyload -->
     <noscript>
         <style>
             .woocommerce-product-gallery {
@@ -132,7 +130,6 @@
             }
         </style>
     </noscript>
-    
     <meta name="generator"
         content="Elementor 3.24.2; features: e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap" />
     <style>
@@ -5930,8 +5927,57 @@
     <script src="plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js" id="sourcebuster-js-js"></script>
     <script src="plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js" id="smush-lazy-load-js"></script>
     <script src="plugins/header-footer-elementor/inc/js/frontend.js" id="hfe-frontend-js-js"></script>
+    <script src="plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js" id="smartmenus-js"></script>
+    <script src="plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js"
+        id="elementor-pro-webpack-runtime-js"></script>
     <script src="plugins/elementor/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
     <script src="plugins/elementor/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+    <script id="elementor-pro-frontend-js-before">
+        var ElementorProFrontendConfig = {
+            ajaxurl: "https:\/\/cuongduyen.vn\/wp-admin\/admin-ajax.php",
+            nonce: "bb323201f3",
+            urls: {
+                assets:
+                    "https:\/\/cuongduyen.vn\/wp-content\/plugins\/elementor-pro\/assets\/",
+                rest: "https:\/\/cuongduyen.vn\/wp-json\/",
+            },
+            shareButtonsNetworks: {
+                facebook: { title: "Facebook", has_counter: true },
+                twitter: { title: "Twitter" },
+                linkedin: { title: "LinkedIn", has_counter: true },
+                pinterest: { title: "Pinterest", has_counter: true },
+                reddit: { title: "Reddit", has_counter: true },
+                vk: { title: "VK", has_counter: true },
+                odnoklassniki: { title: "OK", has_counter: true },
+                tumblr: { title: "Tumblr" },
+                digg: { title: "Digg" },
+                skype: { title: "Skype" },
+                stumbleupon: { title: "StumbleUpon", has_counter: true },
+                mix: { title: "Mix" },
+                telegram: { title: "Telegram" },
+                pocket: { title: "Pocket", has_counter: true },
+                xing: { title: "XING", has_counter: true },
+                whatsapp: { title: "WhatsApp" },
+                email: { title: "Email" },
+                print: { title: "Print" },
+                "x-twitter": { title: "X" },
+                threads: { title: "Threads" },
+            },
+            woocommerce: {
+                menu_cart: {
+                    cart_page_url: "https:\/\/cuongduyen.vn\/cart\/",
+                    checkout_page_url: "https:\/\/cuongduyen.vn\/checkout\/",
+                    fragments_nonce: "7c40e2be6f",
+                },
+            },
+            facebook_sdk: { lang: "vi", app_id: "" },
+            lottie: {
+                defaultAnimationUrl:
+                    "https:\/\/cuongduyen.vn\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json",
+            },
+        };
+    </script>
+    <script src="plugins/elementor-pro/assets/js/frontend.min.js" id="elementor-pro-frontend-js"></script>
     <script id="elementor-frontend-js-before">
         var elementorFrontendConfig = {
             environmentMode: {
@@ -6063,6 +6109,7 @@
         };
     </script>
     <script src="plugins/elementor/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+    <script src="plugins/elementor-pro/assets/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
     <script>
         /(trident|msie)/i.test(navigator.userAgent) &&
             document.getElementById &&
