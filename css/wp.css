@@ -578,6 +578,19 @@ a:where(:not(.wp-element-button)) {
     font-family: var(--wp--preset--font-family--cardo) !important;
 }
 
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
 :root :where(.wp-block-pullquote) {
     font-size: 1.5em;
     line-height: 1.6;
