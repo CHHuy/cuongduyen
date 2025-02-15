@@ -19,17 +19,17 @@
 			src: url("uploads/2024/09/CDReckless-Regular.otf") format("OpenType");
 		}
 	</style>
-	<link rel="stylesheet" id="astra-theme-css-css" href="themes/astra/assets/css/minified/main.min.css" media="all" />
+	<link rel="stylesheet" id="astra-theme-css-css" href="assets/css/astra.min.css" media="all" />
 	<link rel="stylesheet" id="astra-inline-css" href="assets/css/astra.css" media="all" />
 	<link rel="stylesheet" id="wp-inline-css" href="assets/css/wp.css" media="all" />
 	<link rel="stylesheet" id="woocommerce-inline-css" href="assets/css/woocommerce.css" media="all" />
 	<link rel="stylesheet" id="woocommerce-layout-css"
-		href="themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-layout-grid.min.css" media="all" />
+		href="assets/css/woocommerce-layout-grid.min.css" media="all" />
 	<link rel="stylesheet" id="woocommerce-smallscreen-css"
-		href="themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-smallscreen-grid.min.css"
+		href="assets/css/woocommerce-smallscreen-grid.min.css"
 		media="only screen and (max-width: 921px)" />
 	<link rel="stylesheet" id="woocommerce-general-css"
-		href="themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-grid.min.css" media="all" />
+		href="assets/css/woocommerce-grid.min.css" media="all" />
 	<link rel="stylesheet" id="elementor-global-css" href="assets/css/global.css" media="all" />
 	<link rel="stylesheet" id="elementor-post-6-css" href="assets/css/post-6.css" media="all" />
     <link rel="stylesheet" id="elementor-post-21-css" href="assets/css/post-21.css" media="all" />
@@ -37,11 +37,11 @@
 	<link rel="stylesheet" id="elementor-post-2096-css" href="assets/css/post-2096.css" media="all" />
 	<link rel="stylesheet" id="hfe-widgets-style-css"
 		href="assets/css/widget.css" media="all" />
-	<link rel="stylesheet" id="codesigner-css" href="plugins/woolementor/assets/css/front.css" media="all" />
+	<link rel="stylesheet" id="codesigner-css" href="third-party/woolementor/css/front.css" media="all" />
 	<link rel="stylesheet" id="codesigner-font-awesome-css" href="third-party/font-awesome/6.4.0/css/all.min.css"
 		media="all" />
 	<link rel="stylesheet" id="font-awesome-free-css" href="third-party/font-awesome/6.1.1/css/all.min.css" media="all" />
-	<link rel="stylesheet" id="codesigner-grid-system-css" href="plugins/woolementor/assets/css/cx-grid.css"
+	<link rel="stylesheet" id="codesigner-grid-system-css" href="third-party/woolementor/css/cx-grid.css"
 		media="all" />
 	<link rel="stylesheet" id="hfe-style-css"
 		href="assets/css/header-footer-elementor.css" media="all" />
@@ -64,28 +64,7 @@
 	<link rel="stylesheet" id="e-animation-fadeInUp-css"
 		href="third-party/animations/styles/fadeInUp.min.css" media="all" />
 
-
-	<link rel='stylesheet' id='tooltipster-css'
-		href='plugins/woo-product-filter/modules/templates/lib/tooltipster/tooltipster.css?ver=1739521806'
-		media='all' />
-	<link rel='stylesheet' id='frontend.filters-css'
-		href='plugins/woo-product-filter/modules/woofilters/css/frontend.woofilters.css?ver=1739521806' media='all' />
-	<link rel='stylesheet' id='jquery-ui-css' href='plugins/woo-product-filter/css/jquery-ui.min.css?ver=2.6.9'
-		media='all' />
-	<link rel='stylesheet' id='jquery-ui.structure-css'
-		href='plugins/woo-product-filter/css/jquery-ui.structure.min.css?ver=2.6.9' media='all' />
-	<link rel='stylesheet' id='jquery-ui.theme-css'
-		href='plugins/woo-product-filter/css/jquery-ui.theme.min.css?ver=2.6.9' media='all' />
-	<link rel='stylesheet' id='font-awesomeWpf-css'
-		href='plugins/woo-product-filter/modules/templates/css/font-awesome.min.css?ver=1739521806' media='all' />
-	<link rel='stylesheet' id='custom.filters-css'
-		href='plugins/woo-product-filter/modules/woofilters/css/custom.woofilters.css?ver=1739521806' media='all' />
-	<link rel='stylesheet' id='loaders-css'
-		href='plugins/woo-product-filter/modules/woofilters/css/loaders.css?ver=1739521806' media='all' />
-
-
-
-	<link rel="stylesheet" id="chld_thm_cfg_child-css" href="themes/astra-child/style.css" media="all" />
+	<link rel="stylesheet" id="chld_thm_cfg_child-css" href="assets/css/astra-child.css" media="all" />
 	<link rel="stylesheet" id="google-fonts-1-css"
 		href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;subset=vietnamese&#038;ver=6.7.2"
 		media="all" />
@@ -113,9 +92,9 @@
 		}
 	</script>
 
-	<script src="plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="jquery-blockui-js"
+	<script src="third-party/woocommerce/js/jquery-blockui/jquery.blockUI.min.js" id="jquery-blockui-js"
 		data-wp-strategy="defer"></script>
-	<script src="plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" id="js-cookie-js"
+	<script src="third-party/woocommerce/js/js-cookie/js.cookie.min.js" id="js-cookie-js"
 		data-wp-strategy="defer"></script>
 
 	<!-- JS Animation -->
@@ -2930,10 +2909,10 @@
 	<!-- #page -->
 
 	<div id="codesigner-modal" style="display: none">
-		<img id="codesigner-modal-loader" alt="Loader" data-src="plugins/woolementor/assets/img/loader.gif"
+		<img id="codesigner-modal-loader" alt="Loader" data-src="third-party/woolementor/img/loader.gif"
 			src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
 			class="lazyload" /><noscript><img id="codesigner-modal-loader" alt="Loader"
-				src="plugins/woolementor/assets/img/loader.gif" /></noscript>
+				src="third-party/woolementor/img/loader.gif" /></noscript>
 	</div>
 	<script type="text/javascript">
 		const lazyloadRunObserver = () => {
@@ -2970,7 +2949,7 @@
 			document.body.className = c;
 		})();
 	</script>
-	<link rel="stylesheet" id="wc-blocks-style-css" href="plugins/woocommerce/assets/client/blocks/wc-blocks.css"
+	<link rel="stylesheet" id="wc-blocks-style-css" href="third-party/woocommerce/client/blocks/wc-blocks.css"
 		media="all" />
 	<script src="assets/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
 	<script src="assets/js/jquery/ui/menu.min.js" id="jquery-ui-menu-js"></script>
@@ -3015,12 +2994,12 @@
 			responsive_cart_click: "flyout",
 		};
 	</script>
-	<script src="themes/astra/assets/js/minified/frontend.min.js" id="astra-theme-js-js"></script>
-	<script src="plugins/woocommerce/assets/js/frontend/woocommerce.min.js" id="woocommerce-js"
+	<script src="assets/js/astra/frontend.min.js" id="astra-theme-js-js"></script>
+	<script src="third-party/woocommerce/js/frontend/woocommerce.min.js" id="woocommerce-js"
 		data-wp-strategy="defer"></script>
 	<script src="assets/js/imagesloaded.min.js" id="imagesloaded-js"></script>
-	<script src="plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js" id="sourcebuster-js-js"></script>
-	<script src="plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js" id="smush-lazy-load-js"></script>
+	<script src="third-party/woocommerce/js/sourcebuster/sourcebuster.min.js" id="sourcebuster-js-js"></script>
+	<script src="third-party/wp-smushit/smush-lazy-load.min.js" id="smush-lazy-load-js"></script>
 	<script src="assets/js/header-footer-widget.js" id="hfe-frontend-js-js"></script>
 	<script src="third-party/smartmenus/jquery.smartmenus.min.js" id="smartmenus-js"></script>
 	<script src="assets/js/pro/webpack-pro.runtime.min.js"
@@ -3221,22 +3200,22 @@
 		<ul>
 			<li>
 				<a href="https://zalo.me/0968505268" target="_blank">
-					<img data-src="themes/astra/assets/zalo.png" alt="zalo"
+					<img data-src="uploads/zalo.png" alt="zalo"
 						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-						class="lazyload" /><noscript><img data-src="themes/astra/assets/zalo.png" alt="zalo"
+						class="lazyload" /><noscript><img data-src="uploads/zalo.png" alt="zalo"
 							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-							class="lazyload" /><noscript><img src="themes/astra/assets/zalo.png"
+							class="lazyload" /><noscript><img src="uploads/zalo.png"
 								alt="zalo" /></noscript></noscript>
 					<span>CHAT ZALO</span>
 				</a>
 			</li>
 			<li>
 				<a href="tel:0968505268" target="_blank">
-					<img data-src="themes/astra/assets/call.png" alt="call"
+					<img data-src="uploads/call.png" alt="call"
 						src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-						class="lazyload" /><noscript><img data-src="themes/astra/assets/call.png" alt="call"
+						class="lazyload" /><noscript><img data-src="uploads/call.png" alt="call"
 							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-							class="lazyload" /><noscript><img src="themes/astra/assets/call.png"
+							class="lazyload" /><noscript><img src="uploads/call.png"
 								alt="call" /></noscript></noscript>
 					<span>0968 505 268</span>
 				</a>
@@ -3246,20 +3225,20 @@
 
 	<div class="mobile-zalo">
 		<a href="https://zalo.me/0968505268" target="_blank">
-			<img data-src="themes/astra/assets/zalo.png" alt="zalo"
+			<img data-src="uploads/zalo.png" alt="zalo"
 				src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-				class="lazyload" /><noscript><img data-src="themes/astra/assets/zalo.png" alt="zalo"
+				class="lazyload" /><noscript><img data-src="uploads/zalo.png" alt="zalo"
 					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-					class="lazyload" /><noscript><img src="themes/astra/assets/zalo.png"
+					class="lazyload" /><noscript><img src="uploads/zalo.png"
 						alt="zalo" /></noscript></noscript>
 			<span>CHAT ZALO</span>
 		</a>
 		<a href="tel:0968505268" target="_blank">
-			<img data-src="themes/astra/assets/call.png" alt="call"
+			<img data-src="uploads/call.png" alt="call"
 				src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-				class="lazyload" /><noscript><img data-src="themes/astra/assets/call.png" alt="call"
+				class="lazyload" /><noscript><img data-src="uploads/call.png" alt="call"
 					src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-					class="lazyload" /><noscript><img src="themes/astra/assets/call.png"
+					class="lazyload" /><noscript><img src="uploads/call.png"
 						alt="call" /></noscript></noscript>
 			<span>0968 505 268</span>
 		</a>
